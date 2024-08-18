@@ -1,0 +1,46 @@
+.markdown h1 {
+  @apply text-6xl font-bold text-foreground/80 mb-7;
+}
+
+.markdown h2 {
+  @apply text-4xl font-bold text-foreground/80 mb-5 hover:underline;
+}
+
+.markdown h3 {
+  @apply text-2xl font-semibold text-foreground/80 mb-4 hover:underline;
+}
+
+.markdown h4 {
+  @apply text-xl font-semibold text-foreground/80 mb-4 hover:underline;
+}
+
+.markdown h5 {
+  @apply text-xl font-medium text-foreground/80 mb-4 hover:underline;
+}
+
+.markdown p:not(:has(> img)) {
+  @apply text-base leading-relaxed mb-6 opacity-75;
+}
+
+.markdown ul {
+  @apply list-disc ml-6 mb-6;
+}
+
+.markdown ol {
+  @apply list-decimal ml-6 mb-6;
+}
+
+.markdown li {
+  @apply mb-3;
+}
+
+.markdown code {
+  @apply cursor-default;
+}
+.markdown a {
+  @apply text-blue-500;
+}
+
+.markdown blockquote {
+  @apply italic text-foreground/60 border-l-4 border-background/30 pl-4 py-2 my-4;
+}

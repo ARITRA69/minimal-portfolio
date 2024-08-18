@@ -10,7 +10,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <main className="w-11/12 md:w-2/5 mx-auto flex flex-col gap-16 pt-20 pb-40 relative">
+    <main className="w-11/12 sm:w-3/4 lg:w-2/5 mx-auto flex flex-col gap-16 pt-20 pb-40 relative">
       <Hero />
       <Separator />
       <Achievements />

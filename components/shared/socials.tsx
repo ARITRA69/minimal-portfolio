@@ -3,6 +3,7 @@ import { Rss } from "lucide-react";
 import { bricolageGrotesque } from "@/fonts";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
+import { SOCIALS } from "@/constants";
 
 export const Socials = () => {
   return (
@@ -14,19 +15,14 @@ export const Socials = () => {
           <div className="flex flex-col gap-1">
             <h6 className="uppercase">Follow</h6>
             <ul className="flex items-center gap-2">
-              <li className="text-sm opacity-70 hover:opacity-100 transition-all duration-300">
-                <Link href="https://x.com/ARITRA81999">Twitter</Link>
-              </li>
-              <Separator orientation="vertical" />
-              <li className="text-sm opacity-70 hover:opacity-100 transition-all duration-300">
-                <Link href="https://www.instagram.com/thatgoddamnpope/">
-                  Instagram
-                </Link>
-              </li>
-              <Separator orientation="vertical" />
-              <li className="text-sm opacity-70 hover:opacity-100 transition-all duration-300">
-                <Link href="https://github.com/aritra69">Github</Link>
-              </li>
+              {SOCIALS.map((social) => (
+                <li key={social.name}>
+                  <div className="text-sm opacity-70 hover:opacity-100 transition-all duration-300">
+                    <Link href={social.href}>{social.name}</Link>
+                  </div>
+                  {SOCIALS.length > 1 && <Separator orientation="vertical" />}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

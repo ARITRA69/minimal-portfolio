@@ -141,6 +141,21 @@ export const SOFT_SKILLS = [
 
 export const LANGUAGE_SKILLS = ["English", "Hindi", "Bengali"];
 
+export const SOCIALS = [
+  {
+    name: "Twitter",
+    href: "https://x.com/ARITRA81999",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/aritra69/",
+  },
+  {
+    name: "Github",
+    href: "https://github.com/aritra69",
+  },
+];
+
 export const EXPERIENCES = [
   {
     title: "Next.js Developer Intern",

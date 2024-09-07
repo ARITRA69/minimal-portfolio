@@ -21,7 +21,7 @@ export default async function Page() {
   const categories = await getCategories();
   return (
     <div className="w-11/12 sm:w-3/4 lg:w-2/5 mx-auto flex flex-col gap-20 pt-20 pb-40">
-      <Categories categories={categories} />
+      {/* <Categories categories={categories} /> */}
       <Blogs blogs={blogs} />
     </div>
   );

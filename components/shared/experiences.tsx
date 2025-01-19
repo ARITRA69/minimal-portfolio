@@ -1,6 +1,7 @@
 import { EXPERIENCES } from "@/constants";
 import { bricolageGrotesque } from "@/fonts";
 import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export const Experiences = () => {
@@ -25,16 +26,17 @@ export const Experiences = () => {
               </div>
             </div>
             <div className="grid gap-3 pl-7">
-              <div className="grid gap-1">
-                <div className="text-sm font-medium">Responsibilities</div>
+              <div className="grid gap-1 p-3 bg-foreground/5 rounded-md border border-foreground/10">
                 <ul className="grid gap-2 text-sm text-muted-foreground">
                   {experience.responsibilities.map((responsibility, i) => (
-                    <li key={i}> {responsibility}</li>
+                    <li key={i} className="flex items-center gap-2">
+                      <ArrowRight strokeWidth={1.5} size={14} />{" "}
+                      {responsibility}
+                    </li>
                   ))}
                 </ul>
               </div>
               <div className="grid gap-1">
-                <div className="text-sm font-medium">Tech Stack</div>
                 <div className="flex flex-wrap gap-2 text-sm">
                   {experience.techStack.map((tech, i) => (
                     <div

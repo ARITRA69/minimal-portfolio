@@ -15,10 +15,10 @@ export const Contact = () => {
         <div className="border border-foreground/10 px-4 py-2 flex items-center gap-2">
           <Globe size={16} />
           <Link
-            href="https://aritra69.com"
+            href="https://aritra360.com"
             className="text-sm opacity-70  hover:opacity-100 transition-all duration-300"
           >
-            aritra69.com
+            aritra360.com
           </Link>
         </div>
         <div className="border border-foreground/10 px-4 py-2 flex items-center gap-2">

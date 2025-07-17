@@ -22,7 +22,7 @@ export default function Home() {
       <Separator />
       <Experiences />
       <Separator />
-      <Projects />
+      {/* <Projects /> */}
       <Separator />
       {/* <section className="flex flex-col gap-6">
         <h2 className={cn(bricolageGrotesque.className, "text-xl font-bold")}>

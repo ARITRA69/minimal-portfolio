@@ -18,7 +18,9 @@ export const Socials = () => {
               {SOCIALS.map((social) => (
                 <li key={social.name}>
                   <div className="text-sm opacity-70 hover:opacity-100 transition-all duration-300">
-                    <Link href={social.href}>{social.name}</Link>
+                    <Link target="_blank" href={social.href}>
+                      {social.name}
+                    </Link>
                   </div>
                   {SOCIALS.length > 1 && <Separator orientation="vertical" />}
                 </li>

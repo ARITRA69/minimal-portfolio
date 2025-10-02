@@ -9,12 +9,15 @@ import {
 } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
+  SiAnthropic,
   SiAuth0,
   SiExpress,
   SiFirebase,
+  SiGooglegemini,
   SiJsonwebtokens,
   SiNestjs,
   SiNextdotjs,
+  SiOpenai,
 } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -48,10 +51,10 @@ export const MINIMAP_LINKS = [
     label: "Experiences",
     href: "#experiences",
   },
-  {
-    label: "Projects",
-    href: "#projects",
-  },
+  // {
+  //   label: "Projects",
+  //   href: "#projects",
+  // },
   {
     label: "Contact",
     href: "#contact",
@@ -79,18 +82,6 @@ export const ACHIEVEMENTS = [
 
 export const TECHNICAL_SKILLS = [
   {
-    name: "HTML",
-    icon: FaHtml5,
-  },
-  {
-    name: "CSS",
-    icon: FaCss3Alt,
-  },
-  {
-    name: "JavaScript",
-    icon: IoLogoJavascript,
-  },
-  {
     name: "React",
     icon: FaReact,
   },
@@ -103,10 +94,6 @@ export const TECHNICAL_SKILLS = [
     icon: SiTypescript,
   },
   {
-    name: "Express.js",
-    icon: SiExpress,
-  },
-  {
     name: "Node.js",
     icon: FaNodeJs,
   },
@@ -115,12 +102,20 @@ export const TECHNICAL_SKILLS = [
     icon: SiMongodb,
   },
   {
-    name: "Firebase",
-    icon: SiFirebase,
+    name: "Anthropic",
+    icon: SiAnthropic,
   },
   {
-    name: "Nest.js",
-    icon: SiNestjs,
+    name: "OpenAI",
+    icon: SiOpenai,
+  },
+  {
+    name: "Gemini",
+    icon: SiGooglegemini,
+  },
+  {
+    name: "Firebase",
+    icon: SiFirebase,
   },
   {
     name: "Next-Auth",
@@ -161,15 +156,25 @@ export const EXPERIENCES = [
     title: "Software Engineer",
     company: {
       label: "Prodgain",
-      href: "https://prodgain.com",
+      href: "https://prodgain.ai",
     },
     period: "Dec 2024 - Present",
     responsibilities: [
       "Integrating Large Language Models (Claude, OpenAI) into web applications",
       "Implementing agentic workflows for enhanced automation",
+      "OpenAI and Gemini RealTime voice integration for sales reps training",
       "Developing AI-powered features and functionalities",
+      "Built the landing page for the company",
+      "Customized generic utilities and components as per product needs",
     ],
-    techStack: ["NextJS", "React", "TailwindCSS", "Claude API", "OpenAI API"],
+    techStack: [
+      "NextJS",
+      "React",
+      "TailwindCSS",
+      "Claude API",
+      "OpenAI API",
+      "Gemini API",
+    ],
   },
   {
     title: "Frontend Developer",

@@ -1,7 +1,7 @@
 import { EXPERIENCES } from "@/constants";
 import { bricolageGrotesque } from "@/fonts";
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export const Experiences = () => {
@@ -17,9 +17,14 @@ export const Experiences = () => {
               <div className="bg-primary rounded-full w-3 h-3" />
               <div className="grid gap-1">
                 <div className="font-medium">{experience.title}</div>
-                <div className="text-sm text-muted-foreground">
-                  <Link href={experience.company.href}>
-                    {experience.company.label}
+                <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                  <Link
+                    href={experience.company.href}
+                    target="_blank"
+                    className="flex items-center gap-1"
+                  >
+                    <span>{experience.company.label}</span>
+                    <ExternalLink size={14} />
                   </Link>{" "}
                   | {experience.period}
                 </div>

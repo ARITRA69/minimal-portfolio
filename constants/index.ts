@@ -177,7 +177,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "Frontend Developer (Part-time)",
     company: { label: "Tukidoo", href: "https://tukidoo.ai" },
     period: "Dec 2023 - Nov 2024",
     responsibilities: [
